@@ -10,12 +10,12 @@ local dpi = require("beautiful.xresources").apply_dpi
 
 -- {{{ Main
 local theme = {}
-theme.wallpaper = themes_path .. "nord/nord-background.png"
+theme.wallpaper = "~/Images/Wallpapers/maxwell.png"
 -- }}}
 
 -- {{{ Styles
 -- theme.font      = "sans 8"
-theme.font      = "Play 9"
+theme.font      = "Hack 11"
 
 -- {{{ Colors
 theme.fg_normal  = "#ECEFF4"
@@ -28,11 +28,14 @@ theme.bg_systray = theme.bg_normal
 -- }}}
 
 -- {{{ Borders
-theme.useless_gap   = dpi(0)
+theme.useless_gap   = dpi(5)
 theme.border_width  = dpi(2)
-theme.border_normal = "#3B4252"
-theme.border_focus  = "#4C566A"
-theme.border_marked = "#D08770"
+theme.border_normal = "#3F3F3F"
+theme.border_focus  = "#6F6F6F"
+theme.border_marked = "#CC9393"
+--theme.border_normal = "#3B4252"
+--theme.border_focus  = "#4C566A"
+--theme.border_marked = "#D08770"
 -- }}}
 
 -- {{{ Titlebars
@@ -132,15 +135,6 @@ theme.titlebar_maximized_button_normal_active = themes_path .. "nord/titlebar/ma
 theme.titlebar_maximized_button_focus_inactive  = themes_path .. "nord/titlebar/maximized_focus_inactive.png"
 theme.titlebar_maximized_button_normal_inactive = themes_path .. "nord/titlebar/maximized_normal_inactive.png"
 -- }}}
--- }}}
-
--- {{{ batteryarc_widget
-theme.widget_main_color = "#88C0D0"
-theme.widget_red = "#BF616A"
-theme.widget_yellow = "#EBCB8B"
-theme.widget_green = "#A3BE8C"
-theme.widget_black = "#000000"
-theme.widget_transparent = "#00000000"
 -- }}}
 
 return theme
